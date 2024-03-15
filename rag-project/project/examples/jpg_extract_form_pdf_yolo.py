@@ -3,9 +3,9 @@ from unstructured.partition.pdf import partition_pdf
 
 #extract jpg form yolox
 #抽取pdf中的图片元素
-images_path = "/rag-project/data/runs"
+images_path = "/Users/titus.w/Code/med-RAG/rag-project/data/demo_data"
 raw_pdf_elements = partition_pdf(
-    filename="/rag-project/data/demo_data/weekly_market_recap.pdf",
+    filename="/Users/titus.w/Code/med-RAG/rag-project/data/demo_data/weekly_market_recap.pdf",
     extract_images_in_pdf=True,
     infer_table_structure=True,
     chunking_strategy="by_title",

@@ -76,7 +76,7 @@ for element in raw_pdf_elements:
     elif "unstructured.documents.elements.CompositeElement" in str(type(element)):
         text_elements.append(Element(type="text", text=str(element)))
 
-image_path = '/rag-project/data/demo_data/jpg'
+image_path = '/Users/titus.w/Code/med-RAG/rag-project/data/demo_data'
 image_data_list = []
 image_summary_list = []
 for img_file in sorted(os.listdir(image_path)):
